@@ -1,0 +1,5 @@
+I have completed part 1a.
+
+Question: I don't want to leave the .ipynb files in my home directory. I have already commited them. Is there a way to move them without messing up git? Possibly into my dropbox folder.
+
+I have not done anything yet for 1b.
