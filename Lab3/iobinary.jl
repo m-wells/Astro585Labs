@@ -18,3 +18,15 @@ function binaryRead(file)
 	close(stream)
 	return retval
 end
+
+# return a specific element from file
+function binaryGet(file,i)
+	temp=binaryRead(file);
+	return temp[i]
+end
+
+# return a specific element from file
+function binaryGet(file,i,j)
+	temp=binaryRead(file);
+	return temp[i,j]
+end
