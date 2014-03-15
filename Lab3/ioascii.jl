@@ -1,5 +1,5 @@
 # write an array to file in ascii format
-asciiWrite(file,array)=writedlm(file,array,"\n")
+asciiWrite(file,array)=writedlm(file,array)
 
 # read an array from file in ascii format
 #	the default delim is taken to be "\n"

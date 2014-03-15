@@ -1,0 +1,29 @@
+# write an array to file in binary format
+function binaryWrite(file,array)
+	stream=open(file,"w")
+	#write(stream,array)
+	serialize(stream,array)
+	close(stream)
+end
+
+# read an array from file in binary format
+function binaryRead(file)
+	stream=open(file,"r")
+
+	retval=deserialize(stream)
+
+	# find how many line are in this file
+	#linenumber=0;
+	#while !eof(stream)
+	#	read(stream,Float64)
+	#	linenumber+=1;
+	#end
+
+	# reset the stream for reading
+	#seekstart(stream)
+	
+	# read the file into array
+	#retval=read(stream,Float64,linenumber)
+	close(stream)
+	return retval
+end
